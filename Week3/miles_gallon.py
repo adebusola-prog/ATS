@@ -7,12 +7,13 @@ gallon= []
 while True:
     a = float(input("what is the mile driven?"))
     b = float(input("what is the gallon used?"))
-    if b == -1:
-        print("not possible")
+    if a==1 or b == -1:
         break
     miles.append(a)  
     gallon.append(b)
-    print(miles)
-    print(gallon)
-    average = sum(miles)/ sum(gallon)
-    print(average)
+    print('The miles / gallon for this tank was ', a/b)
+    #print(miles)
+    #print(gallon)
+
+average = sum(miles)/ sum(gallon)
+print("The overall average miles/gallon was ", average)

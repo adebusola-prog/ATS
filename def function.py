@@ -1,4 +1,5 @@
-def function (x)
-x = (mango)
-y = x.islower()
-print(y)
+i = 0
+while i <= 1000:
+    if i % 2 != 0:
+        print(i)
+    i = i+1
