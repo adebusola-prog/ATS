@@ -1,3 +1,5 @@
-list1 = [10, 20, 30, 40, 50]
-for i in reversed(list1):
-    print(i)
+plus = "12345"
+x = " "
+for i in plus:
+    x = (x + i)
+    print(x.split( ' '))
