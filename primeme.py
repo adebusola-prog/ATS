@@ -11,4 +11,4 @@ def isPrime(n):
     return prime_numbers
     return not_prime_numbers
 
-print(isPrime(5))
+print(isPrime(27))

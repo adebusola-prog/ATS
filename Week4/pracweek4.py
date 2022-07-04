@@ -171,17 +171,47 @@ case letter replaced by a lower case letter and vice-versa.'''
     return y
 
 
-change_case("suPPer")'''
+change_case("suPPer")
 
 s = "suPPEr"
 for i in s:
     if i in s==s.upper():
         y = s.lower()
+    print(y)'''
+
+
+
+'''s = "adeOLA"
+for i in s:
+    if s[3:].upper():
+        y = s[3:].lower()
+print(y)
+for v in s:
+    if s[:3].lower():
+        x = s[:3].upper()
+print(x)
+
+
+s = "adeOLA"
+for i in s:
+    if s[:3].lower() and s[3:].upper():
+        y = s[3:].lower() and s[:3].upper()
+print(y)'''
+
+def change_case(s):
+    y = s.swapcase()
     print(y)
 
 
+change_case("suPPER")
 
+    
 
+# (14)Write a function called is_sorted that is given a list and returns True if the list is sorted
+# and False otherwise.
+# def is_sorted(n):
+#     for i in n:
+#         if n.
 
 
 

@@ -2,11 +2,11 @@
 #x = consonant.split()
 #print(x): check from (aniS)
 def prime(num):
-     for n in range(2, num):
-        for x in range (2, num):
+     for n in range(2, num-1):
+        for x in range (2, num-1):
             if n % x == 0:
                 return False
             else:
                 return True
 
-prime(5)
+print(prime(5))
