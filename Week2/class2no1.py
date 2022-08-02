@@ -11,3 +11,8 @@ last_name = "Adeyeye"
 print(first_name+ ' ' + last_name)
 print("{} {}". format(first_name, last_name))
 print("{} , {}". format(first_name, last_name))
+
+
+print("{} {}". format(first_name, last_name))
+print("{} {}". format(first_name, last_name))
+print("{}, {}".format(first_name, last_name))

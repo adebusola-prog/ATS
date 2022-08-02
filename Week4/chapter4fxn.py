@@ -47,6 +47,7 @@ print(is_prime(109))
 for i in range(2, 1001):
     for j in range(2, i):
             if i % j == 0:
+                
                 break
     else:
         print(i)
@@ -58,6 +59,7 @@ for i in range(2, 1001):
 
 
 import math
+from re import A
 
 num = eval(input("enter a number"))
 x = round(math.sqrt(num))
@@ -182,7 +184,10 @@ tower_of_hanoi(disks, peg1, peg3, peg2)
 
 
 
-
+a, b = 0 , 1
+while a < 10:
+    print(a)
+    a, b = b, a + b
 
 
 

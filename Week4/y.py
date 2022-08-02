@@ -18,9 +18,9 @@
 
 
 
-cont = 0
+count = 0
 word = ["ade", "gbenga", "Tolu", "ehii", "ola", "umi"]
 for w in word:
     if w[0] in "aeiou":
-        cont = cont+1
-print(100*cont/len(word))
+        count = count+1
+print(100*count/len(word))

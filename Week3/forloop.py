@@ -29,18 +29,18 @@ print("the loop is over")'''
 
 
 
-x = 0
-y = 0
-x = []
-y = []
-if x != -1 and y != 0:
-    while True:
-        num = eval(input("enter a number"))
-        num2 = eval(input("enter the second number"))
-        x.append(num)
-        y.append(num2)
-print(x)
-print(y)
+# x = 0
+# y = 0
+# x = []
+# y = []
+# if x != -1 and y != 0:
+#     while True:
+#         num = eval(input("enter a number"))
+#         num2 = eval(input("enter the second number"))
+#         x.append(num)
+#         y.append(num2)
+# print(x)
+# print(y)
 
 
 
@@ -63,12 +63,58 @@ print(y)
 
 
 #fibonacci series
-a = 0
-b = 1
-print(a)
-while b < 50:
-    print(b)
-    a, b = b, a+b
+# a = 0
+# b = 1
+# print(a)
+# while b < 50:
+#     print(b)
+#     a, b = b, a+b
+
+# a, b = 0, 1    #first declare a as 0 and b as 1
+# while a < 50:  # 10 is the limit for the fibonacci I want to use
+#     print(a)
+#     a, b = b, a + b    # declare a as b and b as a + b
+
+# def fib():
+#     a, b = 0 , 1
+#     while a < 10:
+#         print(a)
+#         a, b = b, a + b
+
+# fib()
+
+
+
+
+# def fib(n):
+#     numbers = []
+#     for i in range(n-1):
+#         if i == 0 or i == 1:
+#             numbers.append(i)
+#         else:
+#             numbers.append(numbers[i-1] + numbers[i-2])
+#     print(numbers)
+
+
+# fib(100)
+
+
+def fib(n):
+    number = []
+    for i in range(n):
+        if i == 0 or i == 1:
+            number.append(i)
+        else:
+            number.append(number[i-1] + number[i-2]) 
+    print(number)
+
+
+fib(10)
+
+
+
+
+
 
 
 '''i = 0

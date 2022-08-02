@@ -86,6 +86,17 @@ def game_guess():
 
 game_guess()
 
+def perfect(n):
+    v = []
+    for i in range(1, n):
+        if n % i == 0:
+            v.append(i)
+    s = (sum(v))
+    if s == n:
+        return n == s
+for x in range(1, 100000000):
+    if perfect(x):
+        print(x, "is a perfect number")
 
 
 
