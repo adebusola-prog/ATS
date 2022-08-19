@@ -1,0 +1,101 @@
+---> NO 1
+#How to use the enumerate method
+x = [3, 4, 5, 6]
+for index, item in enumerate([3, 4, 5, 6]):
+    print(index, item)
+
+---> NO 2
+#How to use the args*function
+def add(x, y, *args):
+    total = x + y
+    for arg in args:
+        total += arg
+
+    return total
+
+
+result = add(10, 20, 30, 40)
+print(result)  # The answer is 100(because *args is unpacking, ie tuple wich allows 2 parameter
+
+def add(*args):
+    print(type(args))
+    print(args)
+
+add()
+
+---> NO 4
+When a function has the **kwargs parameter, it can accept a variable number of keyword arguments as a dictionary.
+def connect(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+
+
+connect(car = "toyota", plate_number = 1234, doors = 2)
+
+
+NO4
+#fibonnacci series
+a, b = 0, 1
+while (a < 100):
+    print(a)
+    a, b = b , a+b
+
+NO 5
+#prime numbers
+def prim(n):
+        if n == 1 or n == 0:
+            return False
+        elif n == 2:
+            return True
+        elif n < 0:
+            return False
+        else:
+            for i in range(2, n):
+                if n % i == 0:
+                    return False
+            return True
+ prim(5)
+
+NO6
+def factorial(n):
+    if n < 0:
+        return 0
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        fact = 1
+        while (n>0):
+            fact = fact * n
+            n -= 1
+        return fact
+
+print(factorial(5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -167,16 +167,16 @@
     # if __name__ == '__main__':
     #             main()
 
-m = {}
-while True:
-    x = input("enter your product name")
-    y = int(input("enter the prices"))
-    d = dict([(x, y)])
-    if x == 'none' and y == 0:
-        break
-    else:
-        m.update(d)
-        print(m)
+# m = {}
+# while True:
+#     x = input("enter your product name")
+#     y = int(input("enter the prices"))
+#     d = dict([(x, y)])
+#     if x == 'none' and y == 0:
+#         break
+#     else:
+#         m.update(d)
+#         print(m)
 
 # print("what product would you like to know?")
 # z = input("enter the product")
@@ -220,6 +220,232 @@ while True:
 # print(x)
 # hert.sorted()
 # print(hert)
+
+# from pathlib import Path
+# import os
+# print("Hi")
+# print(Path.cwd())
+
+
+# with open(r'C:\Users\zeu\AppData\Local\Programs\Python\Python38\ASS.txt') as f:
+#     f.read()
+
+
+# import os
+# os.chdir(r'C:\Users\Documents\ATS\star_poem.txt')
+# file = open('ASS.txt')
+# print(file)
+
+# from pathlib import Path
+# p = Path('spam.txt')
+# p.write_text('Hello, world!')
+# 13
+# p.read_text()
+
+
+
+
+
+
+
+
+#solve for musidict
+# x = 1
+# y = 2
+# j = 3
+
+# val = {"name": x, "class": y, "school": j}
+# print(val["name"], val["class"], val["school"])
+
+
+
+
+# text = "Behold, I come."
+# # print(text)
+# from string import punctuation
+# text = text.lower()   #to change to lower case
+# # print(text)
+# for p in punctuation:
+#     text = text.replace(p, '') # to replace the puctuations in the word given
+#     print(text)
+# words = text.split()      # to change to a list use split()
+# print(words)
+
+
+# items = ("aber", "bert", "deret", "carqer")
+# # s = list(d)
+# # print(s[1], s[0])
+# # items = [(i[1], i[0]) for i in items]
+# # items.sort()
+# # for i in items:
+# #     x = (i[0], i[1])
+# #     print(x)
+
+# items = [(i[1], i[0]) for i in items]
+# items.sort
+# print(items)
+# # for i in items:
+# #     print(i)
+
+
+
+
+# text = "Behold, I come. I hope you take me away nooo, yes, I am going"
+# from string import punctuation
+# text = text.lower()
+# for p in punctuation:
+#     text = text.replace(p, '')
+# words = text.split()
+# print(words)
+
+# d = {}
+# for w in words:
+#     if w in d:  
+#         d[w] = d[w] + 1
+#     else:
+#         d[w] = 1
+# print(d)
+
+# items = list(d.items())
+# items.sort()
+# for i in items:
+#     print(i)
+
+# items = list(d.items())
+# items = [(i[1], i[0]) for i in items]
+# items.sort()
+# for i in items:
+#     print(i)
+
+
+# alphabet = 'abcdefghijklmnopqrstuvwxyz'
+# key = 'xznlwebgjhqdyvtkfuompciasr'
+# secret_message = input('Enter your message: ')
+# secret_message = secret_message.lower()
+# for c in secret_message:
+#     if c.isalpha():
+#         print(key[alphabet.index(c)],end='')
+#     else:
+#         print(c, end='')
+# The string key is a random reordering of the alpha
+
+
+
+
+
+# with open("today.txt") as f:
+#     # print(f.read())
+#     x = f.split()
+#     # print(f.readlines())
+#     print(x)
+
+# lines = [line.strip() for line in open("today2.txt")]
+# print(lines)
+# # lines.close()
+# games = [line.split(",")for line in lines]
+# # print(games)
+# # f = [line.split(",") for line in games]
+# # print(f)
+# for i in games: 
+#     print(games[0])
+
+
+# text = "Behold, I come. I hope you take me away nooo, yes, I am going"
+# from string import punctuation
+# text = text.lower()
+# for p in punctuation:
+#     text = text.replace(p, '')
+# words = text.split()
+# print(words)
+
+
+# wordlist = [line.strip() for line in open("today2.txt")]
+# # print(wordlist)
+# for word in wordlist:
+#     if len(word) == 3:
+#         print(word)
+
+lines = [line.strip() for line in open('today2.txt')]
+print(lines)
+games = [line.split(',') for line in lines]
+print(games)
+print(max([abs(int(g[2])-int(g[4])) for g in games]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

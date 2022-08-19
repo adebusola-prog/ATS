@@ -32,11 +32,32 @@
 
 
 
-import os
+# import os
 
-files = os.listdir("journal")
-print(files)
+# files = os.listdir("journal")
+# print(files)
 
+
+peg1 = "1"   #root
+peg2 = "2"   #permanaent
+peg3 = "3"   #temporary
+
+def tower_of_hanoi(disks, peg1, peg2, peg3):  
+    if(disks == 1):  
+        print('Move disk 1 from rod {} to rod {}.'.format(peg1, peg2))  
+        return    
+    tower_of_hanoi(disks - 1, peg1, peg2, peg3)  
+    
+    
+    print('Move disk {} from rod {} to rod {}.'.format(disks, peg1, peg2))  
+    
+    
+    tower_of_hanoi(disks - 1, peg3, peg1, peg2)  
+  
+  
+disks = int(input('Enter the number of disks: '))  
+
+tower_of_hanoi(disks, peg1, peg3, peg2) 
 
 
 

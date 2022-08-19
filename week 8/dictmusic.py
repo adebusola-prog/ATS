@@ -5,7 +5,7 @@
 # x = "lola"
 # print(x.startswith("l"))
 
- 
+
 
 # chord = input('what chord do you want')
 # if chord == 'major':
@@ -44,8 +44,27 @@
 # print(key[r+a], key[r+b], key[r+c])
 # # print(r)
 
-# chord = {"major": {"C": [0, 4, 7], "C#": [0,4,7], "D": [0, 4, 7]},
-#          "minor": {"C": [0, 3, 7], "C#": [0,3,7], "D": [0, 4, 7]} }
+chord = {"major": {"C": [a, b, c], "C#": [a, b, c], "D": [a, b, c]},
+         "minor": {"C": [a, b, c], "C#": [a, b, c], "D": [a, b, c]}}
+print(chord["major"]["C"])
+a = 0
+b = 4
+c = 7
+
+# for k, v in chord[major].items():
+#     print(k,v)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # v = []
@@ -59,9 +78,9 @@
 #         print(v)
 
 
-x = [1,5,6,7,8,1,5,3,1]
-y = set(x)
-print(y)
+# x = [1,5,6,7,8,1,5,3,1]
+# y = set(x)
+# print(y)
 
 
 

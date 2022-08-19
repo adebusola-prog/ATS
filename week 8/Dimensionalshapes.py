@@ -4,6 +4,8 @@
 #  Classes TwoDimension- alShape and ThreeDimensionalShape should extend Shape. Add additional subclasses, 
 # such as Quad- rilateral and Sphere, at their correct locations in the hierarchy as necessary.
 
+import math
+
 
 class Shape():
     def __init__(self, length):
@@ -16,15 +18,15 @@ class Shape():
 class TwoDimensional(Shape):
     pass
 
+
 class ThreeDimensional(Shape):
     pass
 
 
 class Circle(TwoDimensional):
-    pie = 3.142
     radius = 45
-    def __init__(self, radius ,pie):
-        self.pie = pie
+
+    def __init__(self, radius):
         self.radius = radius
     
     def perimeter(self):
@@ -41,9 +43,13 @@ class Square(TwoDimensional):
     def area(self):
         return self.length ** 2
 
-class Rectangle(TwoDimensional):
-    def perimeter(self, breadth = 9):
+
+class Rectangle(TwoDimensional): #todo: add breadth when creating a rectangle
+    def __init__(self, length, breadth):
+        super().__init__(length)
         self.breadth = breadth
+    
+    def perimeter(self):
         return  2 * (self.length + self.breadth)
 
     def area(self):
@@ -51,17 +57,18 @@ class Rectangle(TwoDimensional):
 
 
 class RightTriangle(TwoDimensional):
-    def __init__(self, hypothenus, base, height):
+    def __init__(self, length, hypothenus, height): # todo: Override parent __init__ method
+        super().__init__(length)
         self.hypothenus = hypothenus
-        self.base = base
+        # self.base = length
         self.height = height
 
-
     def perimeter(self):
-        return self.base + self.height + self.hypothenus
+        return self.length + self.height + self.hypothenus
 
     def area(self):
-        return (1/2 * (self.base * self.height))
+        return (1/2 * (self.length * self.height))
+
 
 class Cube(ThreeDimensional):
     def __init__(self, length):
@@ -77,9 +84,8 @@ class Cube(ThreeDimensional):
         return self.length**3
 
 class Sphere(ThreeDimensional):
-    def __init__(self, pie, radius):
+    def __init__(self, radius):
 
-        self.pie = Circle.pie
         self.radius = Circle.radius
 
         # super().__init__(
@@ -91,13 +97,13 @@ class Sphere(ThreeDimensional):
     #     super().__str__(self)
 
     def perimeter(self):
-        return 2 * self.radius * self.pie 
+        return 2 * self.radius * math.pi
 
     def area(self):
-        return 4 * self.pie * (self.radius**2)
+        return 4 * math.pi * (self.radius**2)
 
     def volume(self):
-        return 4/3 * self.pie * (self.radius**3)
+        return 4/3 * math.pi * (self.radius**3)
 
 
 class Tetrahedron(ThreeDimensional):
@@ -108,13 +114,13 @@ class Tetrahedron(ThreeDimensional):
         return (self.length *(2**(1/3)))/12
 
 
-class1 = Circle(7, 3.142)
+class1 = Circle(7)
 print(class1.perimeter())
 print(class1.area())
 class2 = Square(8)
 print(class2.perimeter())
 print(class2.area())
-class3 = Rectangle(9)
+class3 = Rectangle(9, 8)
 print(class3.perimeter())
 print(class3.area())
 class4 = RightTriangle(9, 7, 8)
@@ -124,7 +130,7 @@ class5 = Cube(9)
 print(class5.perimeter())
 print(class5.volume())
 print(class4.area())
-class6 = Sphere(7, 3.142)
+class6 = Sphere(7)
 print(class6.perimeter())
 print(class6.area())
 class7 = Tetrahedron(8)
