@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Image</h2>
+<h1 style="background-color:pink;"><img src="pic_trulli.jpg" alt="Trulli" width="300" height="300">Welcome to my portfolio, I am a backend developer, how may I help you?</h1>
+</body>
+</html>

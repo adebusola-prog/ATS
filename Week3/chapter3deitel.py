@@ -1,25 +1,25 @@
 #(1) factorial of a non negative number
-'''n = 5
-fact = 1
-for i in range(1, n+1):
-    fact *=i
-print(fact)'''
+# '''n = 5
+# fact = 1
+# for i in range(1, n+1):
+#     fact *=i
+# print(fact)'''
 
-def fac(n):
-    if n == 0 or n == 1:
-         return 1
-    elif n < 0:
-        return 0
-    else:
-        fact = 1
-        while(n>1):
-            fact *= n
-            n -= 1
-        return fact
+# # def fac(n):
+#     if n == 0 or n == 1:
+#          return 1
+#     elif n < 0:
+#         return 0
+#     else:
+#         fact = 1
+#         while(n>1):
+#             fact *= n
+#             n -= 1
+#         return fact
 
             
-num= int(input("enter a number"))
-print(fac(num))
+# num= int(input("enter a number"))
+# print(fac(num))
 
 
 # #(2) fractional factorial
@@ -79,6 +79,68 @@ print(fac(num))
 
 #     for i in range(11, 0, -1):
 #         print("*"*i)
+
+
+
+
+
+
+
+
+# for i in range(4):
+#     print("*" * (i + 1))
+
+
+# for i in range(10, 0, -1):
+#         print("*" * (i+1))
+#     print()
+#     for j in range(0, i+1):
+#         print("*", end ="")
+#     print()
+
+
+# number_stars = 10
+# for i in range(number_stars):
+#     for j in range(1, number_stars - i):
+#         print(" ", end="")
+#     for k in range(0, i + 1):
+#         print("*", end="")
+#     print()
+
+
+# number_stars = 10
+# for i in range(number_stars):
+#     for j in range(1, number_stars - i):
+#         print("", end="")
+#     for k in range(0, i + 1):
+#         print("*", end="")
+#     print()
+
+
+
+
+# number_stars = 10
+# for i in range(number_stars):
+#     for j in range(number_stars - i):
+#         print("*", end="")
+#     # for k in range(0, i + 1):
+#     #     print("*", end="")
+#     print()
+
+
+a , b = 0, 1
+while a < 10:
+    print(a)
+    a, b = b, a + b
+
+
+
+
+
+
+
+
+
 
 
 

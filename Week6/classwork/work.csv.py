@@ -7,21 +7,21 @@ import csv
 
 
 
-# def validate_firstname():
-#     firstname = input(f"what is your firstname ? \n")
-#     if firstname.isalpha():
-#         return firstname
-#     else:
-#         print("Error! Invalid entry")
-#         return validate_firstname()
+def validate_firstname():
+    firstname = input(f"what is your firstname ? \n")
+    if firstname.isalpha():
+        return firstname
+    else:
+        print("Error! Invalid entry")
+        return validate_firstname()
 
-# def validate_lastname():
-#     lastname = input(f"what is your lastname ? \n")
-#     if lastname.isalpha():
-#         return lastname
-#     else:
-#         print("Error! Invalid entry")
-#         return validate_lastname()
+def validate_lastname():
+    lastname = input(f"what is your lastname ? \n")
+    if lastname.isalpha():
+        return lastname
+    else:
+        print("Error! Invalid entry")
+        return validate_lastname()
 
 
 
@@ -29,34 +29,34 @@ import csv
 # def csvfiler():
 header = ["firstname","lastname", "middle name", "age", "gender", "dob", "occupation", "marital status", "email"]
 census = []
-#     x = validate_firstname()
-#     y = validate_lastname()
-#     z = input("enter your middle name")
-#     a = int(input("enter your age"))
-#     b = input("enter your gender")
-#     c =input("enter your dob")
-#     d = input("occupation")
-#     e = input("marital status")
-#     f = input("email")
-#     if ".com" not in f:
-#         print("invalid email")
-#     else:
-#         census.append(x)
-#         census.append(y)
-#         census.append(z)
-#         census.append(a)
-#         census.append(b)
-#         census.append(c)
-#         census.append(d)
-#         census.append(e)
-#         census.append(f)
+x = validate_firstname()
+y = validate_lastname()
+z = input("enter your middle name")
+a = int(input("enter your age"))
+b = input("enter your gender")
+c = input("enter your dob")
+d = input("occupation")
+e = input("marital status")
+f = input("email")
+if ".com" not in f:
+    print("invalid email")
+else:
+    census.append(x)
+    census.append(y)
+    census.append(z)
+    census.append(a)
+    census.append(b)
+    census.append(c)
+    census.append(d)
+    census.append(e)
+    census.append(f)
 
-#         print(census)
+    print(census)
 
-#         with open("ade.csv", "w") as f:
-#             writer = csv.writer(f)
-#             writer.writerow(header)
-#             writer.writerow(census)
+    with open("ade.csv", "w") as f:
+        writer = csv.writer(f)
+        writer.writerow(header)
+        writer.writerow(census)
 
 with open("ade.csv", "r") as f:
     reader = csv.DictReader(f)

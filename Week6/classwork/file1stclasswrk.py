@@ -2,21 +2,21 @@
 # password confirmation and saves it in a text file with name as username
 
 
-# with open("bank_details.txt", "w") as x:
-#     d = " "
-#     first_Name = input("what is your first name?")
-#     last_Name = input("what is your last name")
-#     password = input("what password would you like to use?")
-#     username = first_Name + last_Name
-#     d = d + first_Name + last_Name + password
-#     x.write(d)
+with open("bank_details.txt", "w") as x:
+    d = " "
+    first_Name = input("what is your first name?")
+    last_Name = input("what is your last name")
+    password = input("what password would you like to use?")
+    username = first_Name + last_Name
+    d = d + first_Name + last_Name + password
+    x.write(d)
 
 
 
-# fn= input("what is the key for first name?")
-# ln = input("what is the key for last name?")
-# ps = input("what is the key for password?")
-# un = input("what is the key for username?")
+fn= input("what is the key for first name?")
+ln = input("what is the key for last name?")
+ps = input("what is the key for password?")
+un = input("what is the key for username?")
 
 
 

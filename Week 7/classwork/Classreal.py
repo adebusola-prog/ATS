@@ -147,37 +147,28 @@ class Tetrahedron(Shape, ThreeDimensional):
 
 
 Tetrahedron.instantiate_from_csv()
-# shape1 = Circle(7, 3.142, 8, 6, 9, 10, 4)
-# shape2 =Triangle(7, 3.142, 8, 6, 9, 10, 4)
-# shape3 = Square(7, 3.142, 8, 6, 9, 10, 4)
-# shape4 = Sphere(7, 3.142, 8, 6, 9, 10, 4)
-# shape5 = Cube(7, 3.142, 8, 6, 9, 10, 4)
-# shape6 = Tetrahedron(7, 3.142, 8, 6, 9, 10, 4)
-# shape1.circle()
-# shape2.right_triangle()
-# shape3.square()
-# shape4.sphere()
-# shape5.cube()
-# shape6.tetra_hedron()
+shape1 = Circle(7, 3.142, 8, 6, 9, 10, 4)
+shape2 =Triangle(7, 3.142, 8, 6, 9, 10, 4)
+shape3 = Square(7, 3.142, 8, 6, 9, 10, 4)
+shape4 = Sphere(7, 3.142, 8, 6, 9, 10, 4)
+shape5 = Cube(7, 3.142, 8, 6, 9, 10, 4)
+shape6 = Tetrahedron(7, 3.142, 8, 6, 9, 10, 4)
+shape1.circle()
+shape2.right_triangle()
+shape3.square()
+shape4.sphere()
+shape5.cube()
+shape6.tetra_hedron()
 
-# with open ("today.txt", "r") as f:
-#     print(f'{"Account"}{"Name"}{"Balance"}') 
-#     for record in f:
-#         account, name, balance = record.split()
-#         print(f'{account:<10}{name:<10}{balance:>10}')
-
-
-
-
-#static method- not referencing the object of the class
+with open ("today.txt", "r") as f:
+    print(f'{"Account"}{"Name"}{"Balance"}') 
+    for record in f:
+        account, name, balance = record.split()
+        print(f'{account:<10}{name:<10}{balance:>10}')
 
 
 
 
-# print(f'{"Account":<10}{"Name":<10}{"Balance":>10}')
-#  ...: for record in accounts:
-#  ...: account, name, balance = record.split()
-#  ...: print(f'{account:<10}{name:<10}{balance:>10}'
 
 
 

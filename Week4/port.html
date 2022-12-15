@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: pink;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>My Portfolio</h1>
+<p>My name is Adebusola.</p><br>
+<p>I am a backend developer.</p><br>
+<p>How may I help you?.</p><br>
+
+</body>
+</html>
+
+
+
+
+{% block content %}
+{{ mymember }}
+{% for name in mymember %}
+   <p>{{ name.firstname }}--{{ name.lastname}}</p>
+{% endfor %}
+{% endblock %}
+

@@ -15,9 +15,13 @@ profilelist ={"n1":{"first_name" :"Basheer", "last_name":"Balogun","attendance":
 class Profile:
     length_of_data = 11 
 
-    def __init__(self, n):
-        self.data = profilelist[n]
+    def __init__(self, firstname):
+        self.firstname = firstname
+        # self.data = profilelist[n]
     
+    def __str__(self):
+        pass  
+
     def inc_att(self, increment):
         self.data["attendance"] += increment
         return self.data["attendance"]
@@ -49,6 +53,7 @@ class Profile:
         # return bmi
 
         bmi = self.data["height"] / self.data["weight"]**2
+
         return bmi
 
     def get_birth_month(self):
@@ -88,20 +93,21 @@ class Profile:
 
 
 c = Profile("n1")
-c2 = Profile("n2")
-print(c.inc_att(1))
-print(c.update_fullname(22, "Adeola", "Bakare"))
-print(c2.f_and_l_title())
-print(c.initial())
-print(c2.profile_BMI())
-print(c.average_age())
-print(c.length_of_data)
-print(c2.remove_profile())
-Profile.minimum_age()
-Profile.maximum_age()
-print(c.get_birth_month())
-print(c2.get_birth_day())
-print(c2.get_birth_year(2022))
+print(c)
+# c2 = Profile("n2")
+# print(c.inc_att(1))
+# print(c.update_fullname(22, "Adeola", "Bakare"))
+# print(c2.f_and_l_title())
+# print(c.initial())
+# print(c2.profile_BMI())
+# print(c.average_age())
+# print(c.length_of_data)
+# print(c2.remove_profile())
+# Profile.minimum_age()
+# Profile.maximum_age()
+# print(c.get_birth_month())
+# print(c2.get_birth_day())
+# print(c2.get_birth_year(2022))
 
 
 
